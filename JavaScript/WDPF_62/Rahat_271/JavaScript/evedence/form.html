@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            background-color: #9faa8f;
+        }
+        
+        form {
+            width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #edf1ad;
+            border-radius: 5px;
+            box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        input[type="text"],
+        input[type="radio"],
+        input[type="email"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        
+        input[type="submit"], input[type="reset"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        
+        input[type="radio"]:checked + label {
+            font-weight: bold;
+        }
+        
+        input[type="submit"]:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+        
+        input[type="radio"]:checked + label {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="#" name="f">
+        Name: <br>
+        <input type="text" id="name" name="name" ><br>
+        <div id="emailform">
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" onblur="validateEmail()"> <br> <br>
+           </div>
+        Gender: <br>
+        <input type="radio" id="male" name="gender" value="Male">Male
+        <input type="radio" id="male" name="gender" value="Female">Female <br>
+        Subject: <br>
+        <select name="subject">
+                <option value="MBA">MBA</option>
+                <option value="BBA">BBA</option>
+                <option value="CSE">CSE</option>
+                <option value="EEE">EEE</option>
+                <option value="CSIT">CSIT</option>
+            
+        </select> <br><br>
+
+        <input type="submit" value="Submit" onclick="my_f()">
+        <input type="reset" value="Reset">
+    </form>
+    
+    <script>
+        // email validation
+        function validateEmail(email) {
+          var email = document.getElementById('email').value;
+          var re = /\S+@\S+\.\S+/;
+          if(re.test(email)) {
+            document.getElementById('emailform');
+          } else {
+            alert('Please enter a valid email address');
+          }
+          // wmail length
+          if(email.length>15) {
+            alert('Email length should not exceed 15 characters');
+            return false;
+          }
+          return true;
+
+        }
+        // name validation
+        document.getElementById('name').addEventListener('input', function() {
+            var name = document.getElementById('name').value;
+            if(name.length<3) {
+                alert('Name should have at least 3 characters');
+                this.value = '';
+            }
+            else {
+                alert('Name is valid');
+            }
+            
+        });
+
+
+          
+            
+        
+
+        
+        function my_f() {
+            doc=open('','','width=300px,height=350px');
+            var name = document.f.name.value;
+      
+            var email = document.f.email.value;
+            var gender = document.f.gender.value;
+            var subject = document.f.subject.value;
+            
+            with (doc.document) {
+            write("<html>");
+            write("<head><title>Form Details</title></head>");
+            write("<body style='background-color:#edf1ad' padding:10px 20px; font-size:18px; >");
+            write("<div style ='border:2px solid black;padding:10px 20px;border-radius:20px'>");
+            write("<h1 style='color:black; text-decoration: underline;'>Form Details</h1>");
+            write("<br>");
+
+
+
+            write("Name: " + name);
+            write("<br>");
+            write("E-mail: " + email);
+            write("<br>");
+            write("Gender: " + gender);
+            write("<br>");
+            write("Subject: " + subject);
+            write("<br>");
+            write("Thank you for submitting your details.");
+            write("<br>");
+            write("<br>");
+
+            write("<input type='button' value='close me' onclick='self.close()'>");
+            write("<input type='button' value='print' onclick='self.print()'>");
+        };
+    }
+
+    </script>
+    
+</body>
+</html>

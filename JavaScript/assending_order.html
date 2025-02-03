@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assending order</title>
+    <style>
+        p {
+            font-size: 20px;
+            text-align: center;
+            text-decoration: underline;
+        }
+        body
+        {
+            background-color: whitesmoke;
+            padding: 20px;
+            margin-top: 100px;
+            text-align: center;
+            font-size: large;
+        }
+    </style>
+
+</head>
+<body>
+
+    <p>The Output is: </p>
+    
+
+    <script>
+  
+            let num1 = parseFloat(prompt("Enter the first number:"));
+            let num2 = parseFloat(prompt("Enter the second number:"));
+            let num3 = parseFloat(prompt("Enter the third number:"));
+
+            document.write("1st number: " + num1);
+            document.write("<br>2nd number: " + num2);
+            document.write("<br>3rd number: " + num3 + "</br>");
+
+            let numbers = [num1, num2, num3];
+
+            numbers.sort(function(a, b)
+            {
+                return a - b;
+            });
+
+            document.write("Numbers in assensing order: ", numbers);
+
+
+    </script>
+</body>
+</html>

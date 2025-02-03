@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci Sequence</title>
+    <script>
+        function printFibonacci()
+        {
+            const n = 10; 
+            let fib = [0, 1]; 
+            
+            while (true)
+            {
+                const nextFib = fib[fib.length - 1] + fib[fib.length - 2];
+                if (nextFib > n) break;
+                fib.push(nextFib);
+            }
+
+            document.write("<h3>Fibonacci Sequence (0 to 10)</h3>");
+            document.write(fib.join(", ") + "<br>");
+        }
+    </script>
+</head>
+<body onload="printFibonacci()">
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowel & Consonant</title>
+    <style>
+        p {
+            font-size: 20px;
+            text-align: center;
+            text-decoration: underline;
+        }
+        body
+        {
+            background-color: whitesmoke;
+            padding: 20px;
+            margin-top: 100px;
+            text-align: center;
+            font-size: large;
+        }
+    </style>
+
+</head>
+<body>
+
+    <p>The Output is: </p>
+    
+    <script>
+
+        let inputString = prompt("Enter a string:").toLowerCase();
+
+        let vowel = 0;
+        let consonant = 0;
+        let occurrences = {};
+
+        const vowels = "aeiou";
+
+        for (let char of inputString)
+        {
+            if (char >= 'a' && char <= 'z')
+            {
+                if (vowels.includes(char))
+                {
+                    vowel++;
+                } else {
+                    consonant++;
+                }
+                occurrences[char] = (occurrences[char] || 0) + 1;
+            }
+        }
+        document.write("Vowels count:", vowel + "</br>");
+        document.write("Consonants count:", consonant + "</br>");
+        document.write("Occurrences of each character:", occurrences + "</br>");
+
+
+    </script>
+</body>
+</html>

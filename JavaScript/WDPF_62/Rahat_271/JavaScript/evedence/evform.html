@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            background-color: #ebcdcd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            z-index: 100;
+            transition: background-color 0.3s ease-in-out;
+            cursor: pointer;
+            z-index: 100;
+            transition: z-index 0.3s ease-in-out;
+            transition: background-color 0.3s ease-in-out;
+        }
+        form {
+            width: 300px;
+            height: 350px;
+            margin: auto;
+            border: 1px solid black;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+
+        }
+    </style>
+</head>
+<body>
+    <form action="#" name="f">
+        Name: <br>
+        <input type="text" name="n"> <br><br>
+        E-mail: <br>
+        <input type="email" name="e"> <br><br>
+        Course: <br>
+        <select name="subject">
+            <option value="MBA">MBA</option>
+            <option value="BBA">BBA</option>
+            <option value="CSE">CSE</option>
+            <option value="EEE">EEE</option>
+            <option value="CSIT">CSIT</option>
+
+        </select> <br><br>
+        Gender: <br>
+        <input type="radio" name="g" value="Male">Male
+        <input type="radio" name="g" value="Female">Female <br><br>
+        <input type="button" value="Submit"  onclick="my_f()">
+
+    </form>
+
+    <script>
+        function my_f() {
+            doc=open('','','width=300px,height=350px');
+            var name = document.f.n.value;
+            var email = document.f.e.value;
+            var subject = document.f.subject.value;
+            var gender = document.f.g.value;
+
+
+            
+        
+        with (doc.document) {
+            write("<html>");
+            write("<head><title>Form Details</title></head>");
+            write("<body style='background-color:silver' >");
+            write("<h1 style='color:black'>Form Details</h1>");
+            write("<br>");
+
+
+
+            write("Name: " + name);
+            write("<br>");
+            write("E-mail: " + email);
+            write("<br>");
+            write("Course: " + subject);
+            write("<br>");
+            write("Gender: " + gender);
+            write("<br>");
+            write("Thank you for submitting your details.");
+            write("<br>");
+            write("<br>");
+
+            write("<input type='button' value='close me' onclick='self.close()'>");
+            write("<input type='button' value='print' onclick='self.print()'>");
+        };
+    }
+
+    </script>
+    
+</body>
+</html>

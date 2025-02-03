@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII Patterns</title>
+    <style>
+        p {
+            font-size: 20px;
+            text-align: center;
+            text-decoration: underline;
+        }
+        body
+        {
+            background-color: whitesmoke;
+            padding: 20px;
+            margin-top: 100px;
+            text-align: center;
+            font-size: large;
+        }
+    </style>
+    <script>
+        function printPatterns() {
+            // Pattern (1)
+            document.write("<h3>Pattern (1)</h3>");
+            for (let i = 1; i <= 5; i++) {
+                document.write("*".repeat(i) + "<br>");
+            }
+            document.write("<br>");
+
+            // Pattern (2)
+            document.write("<h3>Pattern (2)</h3>");
+            for (let i = 5; i >= 1; i--) {
+                document.write("*".repeat(i) + "<br>");
+            }
+            document.write("<br>");
+
+            // Pattern (3)
+            document.write("<h3>Pattern (3)</h3>");
+            for (let i = 1; i <= 5; i++) {
+                document.write("*".repeat(5) + "<br>");
+            }
+            document.write("<br>");
+
+            // Pattern (4)
+            document.write("<h3>Pattern (4)</h3>");
+            for (let i = 1; i <= 5; i++) {
+                document.write("" + Array.from({length: i}, (_, index) => index + 1).join("") + "<br>");
+            }
+            document.write("<br>");
+
+            // Pattern (5)
+            document.write("<h3>Pattern (5)</h3>");
+            for (let i = 1; i <= 5; i++) {
+                document.write("" + i.toString().repeat(i) + "<br>");
+            }
+        }
+    </script>
+</head>
+<body onload="printPatterns()">
+</body>
+</html>

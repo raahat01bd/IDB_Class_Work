@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            background-color: #ebcdcd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            z-index: 100;
+            transition: background-color 0.3s ease-in-out;
+            cursor: pointer;
+            z-index: 100;
+            transition: z-index 0.3s ease-in-out;
+            transition: background-color 0.3s ease-in-out;
+        }
+        form {
+            width: 300px;
+            height: 550px;
+            margin: auto;
+            border: 1px solid black;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+
+        }
+    </style>
+</head>
+<body>
+    <form action="#" name="f">
+        Name: <br>
+        <input type="text" name="n"> <br><br>
+        Address: <br>
+        <textarea name="add" id=""></textarea> <br><br>
+        Gender: <br>
+        <input type="radio" name="g" value="Male">Male
+        <input type="radio" name="g" value="Female">Female <br><br>
+        Phone: <br>
+        <input type="text" name="ph"> <br><br>
+        <input type="text" id="myEmail" name="myEmail" onblur="checkEmail()">
+        E-mail: <br>
+        <input type="email" name="e"> <br><br>
+        Password: <br>
+        <input type="password" name="p"> <br><br>
+        Education:
+        <div>
+            SSC<input type="checkbox" name="ck" value="SSC" id="">
+            Diploma<input type="checkbox" name="ck" value="Diploma" id="">
+            Hon's<input type="checkbox" name="ck" value="Hon's" id="">
+        </div> <br><br>
+        Subject: <br>
+        <select name="subject">
+            <option value="Graphics">Graphics</option>
+            <option value="Java">Java</option>
+            <option value="Database">Database</option>
+            <option value="Networking">Networking</option>
+            <option value="Web Development">Web Development</option>
+
+        </select> <br><br>
+        <input type="button" value="Submit"  onclick="my_f()">
+        <input type="reset" value="Reset">
+
+    </form>
+
+    <script>
+        function my_f() {
+            doc=open('','','width=200px,height=100px');
+            var name = document.f.n.value;
+            var address = document.f.add.value;
+            var gender = document.f.g.value;
+            var phone = document.f.ph.value;
+            var email = document.f.e.value;
+            var password = document.f.p.value;
+            var course="";
+            for ( i = 0; i < document.f.ck.length; i++) {
+                if (document.f.ck[i].checked) {
+                    course += document.f.ck[i].value + ", ";
+                }
+            }
+            var subject = document.f.subject.value;
+
+
+            
+        
+        with (doc.document) {
+            write("<html>");
+            write("<head><title>Form Details</title></head>");
+            write("<body style='background-color:beige' >");
+            write("<h1 style='color:black'>Form Details</h1>");
+            write("<br>");
+
+
+
+            write("Name: " + name);
+            write("<br>");
+            write("Address: " + address);
+            write("<br>");
+            write("Gender: " + gender);
+            write("<br>");
+            write("Phone: " + phone);
+            write("<br>");
+            write("E-mail: " + email);
+            write("<br>");
+            write("Password: " + password);
+            write("<br>");
+            write("Education: " + course);
+            write("<br>");
+            write("Subject: " + subject);
+            write("<br>");
+            write("<br>");
+            write("Thank you for submitting your details.");
+            write("<br>");
+            write("<br>");
+
+            write("<input type='button' value='close me' onclick='self.close()'>");
+            write("<input type='button' value='print' onclick='self.print()'>");
+        };
+    }
+
+    </script>
+    
+</body>
+</html>

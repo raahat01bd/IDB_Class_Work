@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    section {
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div {
+        background-color: rgb(155, 196, 192);
+        border: 2px solid gray;
+        border-radius: 20px;
+        padding: 15px 45px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+</style>
+
+<body>
+
+    <section>
+        <div>
+            <form action="#" name="formm">
+                Name: <br><br>
+                <input type="text" name="name" id=""><br><br>
+                Email: <br><br>
+                <input type="email" name="email" onblur=""><br><br>
+                Course: <br>
+                <select name="course" id="">
+                    <option value="MBA">MBA</option>
+                    <option value="BSC">BSC</option>
+                    <option value="Msc">MSC</option>
+                </select><br><br>
+                Gender : <br>
+                Male <input type="radio" name="gen" id="" value="Male">
+                Female <input type="radio" name="gen" id="" value="Female"><br><br>
+                <button type="submit" onclick="submitForm()">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        // // email validation
+        // document.formm.email.onblur = function() {
+        //     var email = this.value;
+        //     var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        //     if (!regex.test(email)) {
+        //         alert("Invalid email format");
+        //     }
+        // }
+        function submitForm() {
+            const name = document.formm.name.value;
+            let course = '';
+            for (i = 0; i < document.formm.course.length; i++) {
+                if (document.formm.course[i].selected) {
+                    course = document.formm.course[i].value;
+                }
+            }
+            let gender = '';
+            for (i = 0; i < document.formm.gen.length; i++) {
+                if (document.formm.gen[i].checked) {
+                    gender = document.formm.gen[i].value;
+                }
+            }
+
+            doc = open('', '', 'width=400px,height=300px,margin-left=200px');
+            with (doc.document) {
+                write("<body style ='background-color:#DB7093; padding:10px 20px; font-size:18px; color:white '>");
+                write("<div style ='border:2px solid white ;padding:10px 20px;border-radius:20px'>");
+                write('Name :' + name + '<br><br>');
+                write('Email :' + email + '<br><br>');
+                write('Course :' + course + '<br><br>');
+                write('Gender :' + gender + '<br><br>');
+                write('<button style ="background-color:red;padding:5px 10px;border-radius:15px" onclick="self.close()">Close</button>');
+                write('<button style ="background-color:green;padding:5px 10px;border-radius:15px"  onclick="self.print()">Print</button>');
+            }
+        }
+    </script>
+</body>
+
+</html>

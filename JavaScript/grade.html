@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade</title>
+    <style>
+        p {
+            font-size: 20px;
+            text-align: center;
+            text-decoration: underline;
+        }
+        body
+        {
+            background-color: whitesmoke;
+            padding: 20px;
+            margin-top: 100px;
+            text-align: center;
+            font-size: large;
+        }
+    </style>
+
+</head>
+<body>
+
+    <p>The Output is: </p>
+    
+    <script>
+
+        let number = parseFloat(prompt("Enter your number:"));
+        let grade;
+
+        if (number >= 90 && number <= 100) {
+            grade = "A";
+        } else if (number >= 80 && number <= 89) {
+            grade = "B";
+        } else if (number >= 70 && number <= 79) {
+            grade = "C";
+        } else if (number >= 60 && number <= 69) {
+            grade = "D";
+        } else {
+            grade = "F";
+        }
+
+        document.write("The grade is: " + grade);
+
+    </script>
+</body>
+</html>
