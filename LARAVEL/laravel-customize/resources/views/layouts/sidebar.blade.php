@@ -1,444 +1,263 @@
-<aside class="main-sidebar sidebar-dark-primary elevation-4">
-    <!-- Brand Logo -->
-    <a href="assests/index3.html" class="brand-link">
-      <img src="assests/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
-    </a>
+<aside class="main-sidebar elevation-4 custom-bg-color">
+  <!-- Brand Logo -->
+  <a href="assests/index3.html" class="brand-link">
+    <img src="assests/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+    <span class="brand-text font-weight-light text-white">BD Blast</span>
+  </a>
 
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <!-- Sidebar user (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
-          <img src="assests/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-        </div>
-        <div class="info">
-          <a href="#" class="d-block">MD. RAHAT ALI</a>
-        </div>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <!-- Sidebar user (optional) -->
+    <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+      <div class="image">
+        <img src="assets/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
       </div>
-
-      <!-- SidebarSearch Form -->
-      <div class="form-inline">
-        <div class="input-group" data-widget="sidebar-search">
-          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
-          <div class="input-group-append">
-            <button class="btn btn-sidebar">
-              <i class="fas fa-search fa-fw"></i>
-            </button>
-          </div>
-        </div>
+      <div class="info">
+        <a href="#" class="d-block text-white">MD. RAHAT ALI</a>
       </div>
-
-      <!-- Sidebar Menu -->
-      <nav class="mt-2">
-        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-          <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Dashboard
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="add-user" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Add Users</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="manage-user" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Manage Users</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="assests/index3.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Dashboard v3</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="../widgets.html" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
-              <p>
-                Widgets
-                <span class="right badge badge-danger">New</span>
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-copy"></i>
-              <p>
-                Layout Options
-                <i class="fas fa-angle-left right"></i>
-                <span class="badge badge-info right">6</span>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="../layout/top-nav.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Top Navigation</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../layout/top-nav-sidebar.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Top Navigation + Sidebar</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../layout/boxed.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Boxed</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../layout/fixed-sidebar.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Sidebar</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../layout/fixed-sidebar-custom.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Sidebar <small>+ Custom Area</small></p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../layout/fixed-topnav.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Navbar</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../layout/fixed-footer.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Fixed Footer</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../layout/collapsed-sidebar.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Collapsed Sidebar</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-chart-pie"></i>
-              <p>
-                Charts
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="../charts/chartjs.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>ChartJS</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../charts/flot.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Flot</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../charts/inline.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Inline</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../charts/uplot.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>uPlot</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-tree"></i>
-              <p>
-                UI Elements
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="../UI/general.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>General</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../UI/icons.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Icons</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../UI/buttons.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Buttons</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../UI/sliders.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Sliders</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../UI/modals.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Modals & Alerts</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../UI/navbar.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Navbar & Tabs</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../UI/timeline.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Timeline</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../UI/ribbons.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Ribbons</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-edit"></i>
-              <p>
-                Forms
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="../forms/general.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>General Elements</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../forms/advanced.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Advanced Elements</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../forms/editors.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Editors</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../forms/validation.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Validation</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-table"></i>
-              <p>
-                Tables
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="../tables/simple.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Simple Tables</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../tables/data.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>DataTables</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../tables/jsgrid.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>jsGrid</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-header">EXAMPLES</li>
-          <li class="nav-item">
-            <a href="../calendar.html" class="nav-link">
-              <i class="nav-icon far fa-calendar-alt"></i>
-              <p>
-                Calendar
-                <span class="badge badge-info right">2</span>
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="../gallery.html" class="nav-link">
-              <i class="nav-icon far fa-image"></i>
-              <p>
-                Gallery
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="../kanban.html" class="nav-link">
-              <i class="nav-icon fas fa-columns"></i>
-              <p>
-                Kanban Board
-              </p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-envelope"></i>
-              <p>
-                Mailbox
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="../mailbox/mailbox.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Inbox</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../mailbox/compose.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Compose</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../mailbox/read-mail.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Read</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-book"></i>
-              <p>
-                Pages
-                <i class="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="../examples/invoice.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Invoice</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../examples/profile.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Profile</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../examples/e-commerce.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>E-commerce</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../examples/projects.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Projects</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../examples/project-add.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Project Add</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../examples/project-edit.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Project Edit</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../examples/project-detail.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Project Detail</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../examples/contacts.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Contacts</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../examples/faq.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>FAQ</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="../examples/contact-us.html" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Contact us</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          
-          <li class="nav-header">LABELS</li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-circle text-danger"></i>
-              <p class="text">Important</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-circle text-warning"></i>
-              <p>Warning</p>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon far fa-circle text-info"></i>
-              <p>Informational</p>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <!-- /.sidebar-menu -->
     </div>
-    <!-- /.sidebar -->
-  </aside>
+
+    <!-- SidebarSearch Form -->
+    <div class="form-inline">
+      <div class="input-group" data-widget="sidebar-search">
+        <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+        <div class="input-group-append">
+          <button class="btn btn-sidebar">
+            <i class="fas fa-search fa-fw"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <nav class="mt-2">
+      <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        <li class="nav-item">
+          <a href="../kanban.html" class="nav-link text-white">
+            <i class="nav-icon fas fa-tachometer-alt"></i>
+            <p>Dashboard</p>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="../widgets.html" class="nav-link text-white">
+            <i class="nav-icon fas fa-plane"></i>
+            <p>Flights <span class="right badge badge-danger">View</span></p>
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="../widgets.html" class="nav-link text-white">
+            <i class="nav-icon fas fa-list-ul"></i>
+            <p>Bookings <span class="right badge badge-danger">View</span></p>
+          </a>
+        </li>
+        
+        <li class="nav-item">
+          <a href="../widgets.html" class="nav-link text-white">
+            <i class="nav-icon fas fa-user-circle"></i>
+            <p>Passengers <span class="right badge badge-danger">View</span></p>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white">
+            <i class="nav-icon fas fa-list-ul"></i>
+            <p>Tickets <i class="fas fa-angle-down right"></i><span class="badge badge-info right">6</span></p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="../layout/top-nav.html" class="nav-link text-white">
+                <i class="far fa-eye nav-icon"></i>
+                <p>View Tickets</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../layout/top-nav-sidebar.html" class="nav-link text-white">
+                <i class="far fa-circle-o nav-icon"></i>
+                <p>Issue Tickets</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../layout/boxed.html" class="nav-link text-white">
+                <i class="far fa-ban nav-icon"></i>
+                <p>Cancel Tickets</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../layout/fixed-sidebar.html" class="nav-link text-white">
+                <i class="far fa-flag nav-icon"></i>
+                <p>Report Tickets</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white">
+            <i class="nav-icon fas fa-list-ul"></i>
+            <p> Payments <i class="fas fa-angle-down right"></i><span class="badge badge-info right">6</span></p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="../layout/top-nav.html" class="nav-link text-white">
+                <i class="far fa-eye nav-icon"></i>
+                <p>View Payments</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../layout/top-nav-sidebar.html" class="nav-link text-white">
+                <i class="far fa-list-ul nav-icon"></i>
+                <p>Process Payments</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../layout/boxed.html" class="nav-link text-white">
+                <i class="far fa-ban nav-icon"></i>
+                <p>Payment History</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../layout/fixed-sidebar.html" class="nav-link text-white">
+                <i class="far fa-flag nav-icon"></i>
+                <p>Generate Payment Reports</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="../widgets.html" class="nav-link text-white">
+            <i class="nav-icon fas fa-fighter-jet"></i>
+            <p>Airlines <span class="right badge badge-danger">View</span></p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white">
+            <i class="nav-icon fas fa-sitemap"></i>
+            <p> Seats <i class="fas fa-angle-down right"></i><span class="badge badge-info right">6</span></p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="../layout/top-nav.html" class="nav-link text-white">
+                <i class="far fa-eye nav-icon"></i>
+                <p>View Seats</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../layout/top-nav-sidebar.html" class="nav-link text-white">
+                <i class="far fa-list-ul nav-icon"></i>
+                <p>Update Seat Availability</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../layout/boxed.html" class="nav-link text-white">
+                <i class="far fa-ban nav-icon"></i>
+                <p>Assign Seats</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="../widgets.html" class="nav-link text-white">
+            <i class="nav-icon fas fa-location-arrow"></i>
+            <p>Airports <span class="right badge badge-danger">View</span></p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white">
+            <i class="nav-icon fas fa-cogs"></i>
+            <p> Settings <i class="fas fa-angle-down right"></i><span class="badge badge-info right">6</span></p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="../layout/top-nav.html" class="nav-link text-white">
+                <i class="far fa-cog nav-icon"></i>
+                <p>General Settings</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../layout/top-nav-sidebar.html" class="nav-link text-white">
+                <i class="far fa-list-ul nav-icon"></i>
+                <p>User Management</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../layout/boxed.html" class="nav-link text-white">
+                <i class="far fa-ban nav-icon"></i>
+                <p>Email & Notifications</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../layout/fixed-sidebar.html" class="nav-link text-white">
+                <i class="far fa-flag nav-icon"></i>
+                <p>Payment Gateway Settings</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text-white">
+            <i class="nav-icon fa-envelope"></i>
+            <p> Supports <i class="fas fa-angle-down right"></i><span class="badge badge-info right">6</span></p>
+          </a>
+          <ul class="nav nav-treeview">
+            <li class="nav-item">
+              <a href="../layout/top-nav.html" class="nav-link text-white">
+                <i class="far fa-cog nav-icon"></i>
+                <p>Customer Support Requests</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../layout/top-nav-sidebar.html" class="nav-link text-white">
+                <i class="far fa-list-ul nav-icon"></i>
+                <p>FAQs</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="../layout/boxed.html" class="nav-link text-white">
+                <i class="far fa-ban nav-icon"></i>
+                <p>Contact Us Settings</p>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="../widgets.html" class="nav-link text-white">
+            <i class="nav-icon fas fa-sign-out"></i>
+            <p>Log Out <span class="right badge badge-danger"></span></p>
+          </a>
+        </li>
+
+
+        <!-- Add other menu items similarly with text-white -->
+
+      </ul>
+    </nav>
+    <!-- /.sidebar-menu -->
+  </div>
+  <!-- /.sidebar -->
+</aside>
+
+<style>
+  .custom-bg-color {
+    background-color: #078de3; /* Sidebar background color */
+  }
+  .text-white {
+    color: white !important; /* Ensure text is white */
+  }
+  .nav-link {
+    color: white !important; /* Text color for the links */
+  }
+  .nav-icon {
+    color: white !important; /* Color for the icons */
+  }
+  .nav-treeview .nav-link {
+    color: white !important; /* Ensure nested menu links are also white */
+  }
+  .brand-text, .sidebar a {
+    color: white !important; /* Text color for the brand and other sidebar links */
+  }
+  .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Slight hover effect */
+  }
+</style>
