@@ -33,21 +33,21 @@
     <nav class="mt-2">
       <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
         <li class="nav-item">
-          <a href="../kanban.html" class="nav-link text-white">
+          <a href="view-dashboard" class="nav-link text-white">
             <i class="nav-icon fas fa-tachometer-alt"></i>
             <p>Dashboard</p>
           </a>
         </li>
 
         <li class="nav-item">
-          <a href="../widgets.html" class="nav-link text-white">
+          <a href="view-flights" class="nav-link text-white">
             <i class="nav-icon fas fa-plane"></i>
             <p>Flights <span class="right badge badge-danger">View</span></p>
           </a>
         </li>
         
         <li class="nav-item">
-          <a href="../widgets.html" class="nav-link text-white">
+          <a href="view-bookings" class="nav-link text-white">
             <i class="nav-icon fas fa-list-ul"></i>
             <p>Bookings <span class="right badge badge-danger">View</span></p>
           </a>

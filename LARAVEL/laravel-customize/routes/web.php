@@ -19,10 +19,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('master');
 });
-Route::get('add-user', function () {
-    return view('pages.add_user');
+Route::get('view-flights', function () {
+    return view('pages.flights.view_flights');
 });
-Route::get('manage-user', function () {
-    return view('pages.manage_user');
+Route::get('add-flights', function () {
+    return view('pages.flights.add_flights');
 });
-
+Route::get('view-dashboard', function () {
+    return view('pages.dashboard.view_dash');
+});
+Route::get('view-bookings', function () {
+    return view('pages.bookings.view_bookings');
+});

@@ -2,38 +2,9 @@
 
 @section('content')
 
-<h2>Add Flight</h2>
-<form action="/add-flight" method="POST" style="max-width: 600px; margin: 0 auto;">
-  @csrf
-  <div class="form-group">
-    <label for="flightName">Flight Name:</label>
-    <input type="text" id="flightName" name="flightName" required class="form-control">
-  </div>
-  <div class="form-group">
-    <label for="departure">Departure Time:</label>
-    <input type="datetime-local" id="departure" name="departure" required class="form-control">
-  </div>
-  <div class="form-group">
-    <label for="arrival">Arrival Time:</label>
-    <input type="datetime-local" id="arrival" name="arrival" required class="form-control">
-  </div>
-  <div class="form-group">
-    <label for="origin">Origin:</label>
-    <input type="text" id="origin" name="origin" required class="form-control">
-  </div>
-  <div class="form-group">
-    <label for="destination">Destination:</label>
-    <input type="text" id="destination" name="destination" required class="form-control">
-  </div>
-  <div class="form-group">
-    <label for="price">Price:</label>
-    <input type="number" id="price" name="price" required class="form-control">
-  </div>
-  <div class="form-group">
-    <button type="submit" class="btn btn-primary">Add Flight</button>
-  </div>
-</form>
-
+<a href="add-flights" class="btn-add-flight">
+  <i class="fas fa-plus-circle"></i> Add New Flight
+</a>
 <hr>
 
 <h2>Flight Details</h2>
@@ -84,9 +55,40 @@
   }
 
   h2 {
-    color: #2c3e50;
-    margin-top: 20px;
-    text-align: center;
+  color: #2c3e50;
+  margin-top: 20px;
+  text-align: center; /* Center the text */
+  font-size: 28px; /* Optional: Adjust font size for better readability */
+  margin-bottom: 30px; /* Optional: Adjust the bottom margin to space out from content */
+}
+
+
+  .btn-add-flight {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-add-flight:hover {
+    background-color: #2980b9;
+  }
+
+  .btn-add-flight i {
+    margin-right: 8px;
+    font-size: 18px;
+    text-align: right
+  }
+
+  /* Align button to the right */
+  .btn-add-flight {
+    float: right;  /* Align to the right */
+    direction: rtl; /* Right to left alignment */
   }
 
   .form-group {
@@ -169,4 +171,7 @@
     margin: 20px auto;
   }
 </style>
+
+<!-- Font Awesome CDN for the plus icon -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 @endsection
