@@ -1,16 +1,16 @@
 <?php
 
 namespace App\Models;
-use App\Models\University;
+use App\Models\Student;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Student extends Model
+class University extends Model
 {
     use HasFactory;
-    public function university ()
+    public function students()
     {
-        return $this->hasOne(University::class);
+        return $this->belongsTo(Student::class);
     }
 }
