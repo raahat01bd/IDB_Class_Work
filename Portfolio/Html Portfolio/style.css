@@ -1,0 +1,229 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: #333;
+    z-index: 999;
+    padding: 10px 0;
+}
+
+.navbar .max-width {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.navbar .menu {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .menu li {
+    margin-left: 30px;
+}
+
+.navbar .menu li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover {
+    color: crimson;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.hero .cta-btn {
+    background-color: crimson;
+    padding: 10px 30px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.hero .cta-btn:hover {
+    background-color: #d47878;
+}
+
+/* About Section */
+#about {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#about p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Projects Section */
+#projects {
+    padding: 60px 20px;
+}
+
+#projects .projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+#projects .project-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#projects .project-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+#projects .project-card h3 {
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+#projects .project-card p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#projects .project-card a {
+    display: inline-block;
+    margin-top: 20px;
+    color: crimson;
+    text-decoration: none;
+}
+
+/* Skills Section */
+#skills {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 20px;
+}
+
+#skills .skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#skills .skill {
+    margin-bottom: 20px;
+}
+
+#skills .skill h3 {
+    font-size: 20px;
+}
+
+#skills .progress-bar {
+    background-color: #555;
+    border-radius: 10px;
+    height: 10px;
+    width: 100%;
+}
+
+#skills .progress {
+    background-color: crimson;
+    border-radius: 10px;
+    height: 100%;
+}
+
+/* Contact Section */
+#contact {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#contact input,
+#contact textarea {
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact button {
+    background-color: crimson;
+    color: #fff;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #d47878;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
